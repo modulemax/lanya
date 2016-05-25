@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="连接"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:textColor="#eee"
+        android:paddingLeft="5dp"
+    />
+    <TextView android:id="@+id/title_old_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已匹配"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        />
+    <ListView android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+    />
+    <TextView android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新设备"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+    />
+    <ListView android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true"
+    />
+    <Button android:id="@+id/button_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_scan"
+    />
+</LinearLayout>
